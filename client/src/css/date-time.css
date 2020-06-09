@@ -1,24 +1,19 @@
 #date_time {
-  padding-bottom: 200px;
+  text-align: center;
   background-color: #64706e;
   background-image: url("https://www.transparenttextures.com/patterns/subtle-white-feathers.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .date {
-  text-align: center;
-  padding: 100px 0px 0px 0px;
-}
-
-.time {
-  text-align: center;
+  padding: 80px 0px 0px 0px;
 }
 
 .time h1 {
-  font-size: 200px;
-  line-height: 150px;
+  font-size: calc(10rem + 1vw);
 }
 
 .time span {
-  font-size: 100px;
+  font-size: calc(0.5em + 1vw);
+  color: white;
 }

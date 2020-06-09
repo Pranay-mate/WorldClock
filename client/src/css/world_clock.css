@@ -1,0 +1,27 @@
+#world_clock {
+  padding: 10px;
+  text-align: center;
+}
+
+.worldClockHeader h1 {
+  font-size: 60px;
+  color: white;
+}
+
+.worldClockHeader {
+  background-color: black;
+}
+
+.earth {
+  color: skyblue;
+}
+
+.button {
+  margin-top: 10px;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}

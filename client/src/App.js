@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { BrowserRouter } from "react-browser-router";
-import Navbar from "./navbar";
+import Navba from "./navbar";
 import DateTime from "./date-time";
 import WorldClock from "./world_clock";
 import Header from "./header";
@@ -78,7 +78,7 @@ setInterval(() =>
   //    console.log('this is:', this.state.selectedOption);
 setInterval(() =>
 //fetch date and time from node server by using selected location
-      axios.post("http://localhost:5000/", {
+      axios.post("http://localhost:5000/world", {
       selected: this.state.selectedOption,
     })
     .then((response) =>{
@@ -103,7 +103,7 @@ setInterval(() =>
     <BrowserRouter>
     <div className="App">
       <Header />
-      <Navbar />
+      <Navba />
       <DateTime
       location={this.state.loc}
       day_week={this.state.day_week}

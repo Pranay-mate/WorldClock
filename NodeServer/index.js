@@ -4,7 +4,7 @@ var request = require("request");
 var cors = require('cors');
 const path = require('path');
 const app = express();
-const port =  5000;
+const port =  process.env.PORT || 5000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -100,8 +100,9 @@ app.get("/india", function(req, res) {
   });
 });
 
+
 //fetch JSON DATA of Selected Location
-app.post("/", function(req, res) {
+app.post("/world", function(req, res) {
   var location = req.body.selected.value;
   request(API+location,function (error, response, body) {
   var world = JSON.parse(body);
@@ -137,7 +138,6 @@ app.post("/", function(req, res) {
         default:
       day = "Unknown Day";
       };
-
           var month_number = parseInt(month_num);
           switch(month_number){
             case 01: month = "January";
@@ -179,4 +179,7 @@ app.post("/", function(req, res) {
   });
 });
 
+
+
+//server hosted on this port
 app.listen(port,console.log("hosted on port:"+port));

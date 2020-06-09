@@ -1,11 +1,16 @@
 {
-  "name": "ip_node2",
+  "name": "NodeServer",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engine": {
+    "node": "13.1.0",
+    "npm": "6.14.5"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "heroku-postbuild": "cd client && npm run build"
   },
   "author": "",
   "license": "ISC",
