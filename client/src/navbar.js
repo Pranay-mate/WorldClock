@@ -22,9 +22,9 @@ class Navba extends Component {
 
     render() {
   return (
-    <div className="main_banner sticky-top">
+    <div className="main_banner sticky-top row">
 
-                <Navbar dark expand="md" className="navbar p-3 navbar-dark transparent-nav nav-js">
+                <Navbar dark expand="md" className="navbar p-3 navbar-dark transparent-nav nav-js col-sm-12">
                     <div className="container">
                         <NavbarBrand className="mr-auto" href="/"><Link className="navbar-brand" href="/" activeClass="active"
                         to="home"

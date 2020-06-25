@@ -8,7 +8,6 @@ import Footer from "./footer";
 const axios = require('axios');
 
 class App extends Component {
-
   constructor(props){
     super(props);
     this.state={

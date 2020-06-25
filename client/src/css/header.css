@@ -12,5 +12,6 @@
 }
 
 #home h1 {
-  font-size: 60px;
+  font-size: calc(2rem + 2vw);
+
 }

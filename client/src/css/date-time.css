@@ -8,12 +8,14 @@
 .date {
   padding: 80px 0px 0px 0px;
 }
-
+.date h1 {
+  font-size: calc(1.5rem + 1vw);
+}
 .time h1 {
-  font-size: calc(10rem + 1vw);
+  font-size: calc(1rem + 10vw);
 }
 
 .time span {
-  font-size: calc(0.5em + 1vw);
+  font-size: 5vw;
   color: white;
 }

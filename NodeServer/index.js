@@ -13,9 +13,11 @@ app.use(cors());
 
 var API = "http://worldtimeapi.org/api/timezone/";
 
+//app.use(express.static(path.join(__dirname, 'build')));
+
 //Fetch list of all locations
-app.get("/", (req, res) => {
-  request(API,function (error, response, body) {
+ app.get("/", (req, res) => {
+  request(API, function (error, response, body) {
     var data = JSON.parse(body);
     res.send(data);
   });
@@ -179,6 +181,10 @@ app.post("/world", function(req, res) {
   });
 });
 
+
+//app.get('/*', (req, res) => {
+//  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+//});
 
 
 //server hosted on this port

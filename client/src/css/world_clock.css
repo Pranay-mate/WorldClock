@@ -3,21 +3,30 @@
   text-align: center;
 }
 
-.worldClockHeader h1 {
-  font-size: 60px;
-  color: white;
-}
+
 
 .worldClockHeader {
+  font-size: calc(1.5rem + 1vw);
   background-color: black;
 }
-
+.worldClockHeader h1 {
+  font-size: calc(2.2rem + 1vw);
+  color: white;
+}
+.date_2 h1 {
+  font-size: calc(1.5rem + 1vw);
+}
 .earth {
   color: skyblue;
 }
 
+.Select{
+  padding-right:200px;
+
+}
 .button {
   margin-top: 10px;
+  margin-right: 150px;
   transition-duration: 0.4s;
 }
 
